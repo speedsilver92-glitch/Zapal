@@ -1,9 +1,0 @@
-import Link from "next/link";
-import { ArrowRight, ArrowUpRight, MapPin } from "lucide-react";
-import { Brand } from "./brand";
-import { getContactDetails } from "@/lib/contact";
-
-export function SiteFooter() {
-  const contact = getContactDetails();
-  return <footer className="site-footer"><div className="container"><div className="footer-main"><div className="footer-brand"><Brand inverse /><p>Connecting the right materials,<br />the right thinking, and the right people.<br />That’s how progress happens.</p><span className="footer-origin"><span className="slovakia-flag" />FROM SLOVAKIA. FOR YOUR BUSINESS.</span></div><div className="footer-links"><h2>Our expertise</h2><Link href="/materials">Materials & Supply</Link><Link href="/supply-chain">Supply Chain Planning</Link><Link href="/logistics">Logistics & Transportation</Link></div><div className="footer-links"><h2>Our company</h2><Link href="/about">About us</Link><Link href="/partners">Partners</Link><Link href="/contacts">Contacts</Link></div><div className="footer-contact"><h2>Let’s connect</h2><a href={contact.directionsUrl} target="_blank" rel="noopener noreferrer" className="footer-address"><MapPin size={17} /><span>{contact.address}</span><ArrowUpRight size={14} /></a>{contact.email ? <a className="footer-email" href={`mailto:${contact.email}`}>{contact.email}<ArrowRight size={15} /></a> : <Link className="footer-email" href="/contacts">Send us an enquiry<ArrowRight size={15} /></Link>}{contact.phone && <a className="footer-phone" href={`tel:${contact.phone.replace(/[^\d+]/g, "")}`}>{contact.phone}</a>}</div></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Zapal SK s. r. o. All rights reserved.</span><div><span>IČO {contact.registration}</span><Link href="/privacy">Privacy policy</Link><a href="/sitemap.xml">Sitemap<ArrowUpRight size={12} /></a></div></div></div></footer>;
-}
