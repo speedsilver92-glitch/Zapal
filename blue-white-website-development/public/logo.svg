@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 150" fill="none" role="img" aria-label="ZAPAL">
+  <defs>
+    <linearGradient id="zapalBolt" x1="30" y1="18" x2="150" y2="132" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22b3e6"/>
+      <stop offset="0.42" stop-color="#2f6ff0"/>
+      <stop offset="0.72" stop-color="#f0693a"/>
+      <stop offset="1" stop-color="#f7b733"/>
+    </linearGradient>
+    <linearGradient id="zapalBoltBack" x1="40" y1="20" x2="120" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7ad0f0"/>
+      <stop offset="1" stop-color="#2f6ff0"/>
+    </linearGradient>
+    <linearGradient id="zapalWord" x1="180" y1="40" x2="180" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2f7bf0"/>
+      <stop offset="1" stop-color="#1e57c8"/>
+    </linearGradient>
+  </defs>
+  <!-- circuit traces -->
+  <g stroke="#2f6ff0" stroke-width="3.4" stroke-linecap="round" fill="none">
+    <path d="M52 52 H30 M30 52 V70"/>
+    <path d="M46 74 H24"/>
+    <path d="M60 96 H34 M34 96 V80"/>
+  </g>
+  <g fill="#2f6ff0">
+    <circle cx="30" cy="52" r="4.6"/>
+    <circle cx="24" cy="74" r="4.6"/>
+    <circle cx="34" cy="96" r="4.6"/>
+  </g>
+  <!-- back layer of the bolt -->
+  <path d="M108 16 L60 74 L88 74 L66 132 L128 60 L100 60 Z" fill="url(#zapalBoltBack)" opacity="0.55"/>
+  <!-- main bolt -->
+  <path d="M120 14 L66 78 L96 78 L74 136 L142 62 L110 62 Z" fill="url(#zapalBolt)"/>
+  <!-- wordmark -->
+  <text x="166" y="102" font-family="Manrope, Arial, sans-serif" font-size="86" font-weight="800" letter-spacing="2" fill="url(#zapalWord)">ZAPAL</text>
+</svg>
