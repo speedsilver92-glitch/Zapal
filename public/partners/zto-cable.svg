@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 140" role="img" aria-label="ZTO CABLE">
+  <defs>
+    <clipPath id="ztoGlobe"><circle cx="66" cy="62" r="33"/></clipPath>
+  </defs>
+  <!-- globe base -->
+  <circle cx="66" cy="62" r="33" fill="#eaf3fb"/>
+  <!-- longitude / latitude grid -->
+  <g clip-path="url(#ztoGlobe)" fill="none" stroke="#cbe0f4" stroke-width="1.4">
+    <line x1="33" y1="62" x2="99" y2="62"/>
+    <line x1="66" y1="29" x2="66" y2="95"/>
+    <ellipse cx="66" cy="62" rx="16" ry="33"/>
+    <ellipse cx="66" cy="62" rx="33" ry="15"/>
+  </g>
+  <!-- stylised continents (blue landmasses) -->
+  <g clip-path="url(#ztoGlobe)" fill="#8fbde6">
+    <path d="M55 33c7 1 10 6 8 11-2 5-8 5-9 10-1 6 5 8 4 14-1 5-7 7-8 12-1 4 2 7 1 11l-9-2V33Z"/>
+    <path d="M80 38c6 2 8 7 7 12-1 5-6 7-6 12 0 6 6 8 5 14-1 5-6 7-8 11l-7-1c3-6 9-8 8-15-1-5-6-7-5-13 1-5 7-7 6-12-1-3-3-5-6-6l6-2Z"/>
+    <circle cx="48" cy="48" r="2.6"/>
+    <circle cx="86" cy="76" r="2.2"/>
+  </g>
+  <circle cx="66" cy="62" r="33" fill="none" stroke="#b6d5f0" stroke-width="2"/>
+  <!-- orbital swoosh arcs -->
+  <path d="M22 46 C56 24 100 30 116 54" fill="none" stroke="#e0895a" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M110 78 C94 100 48 102 18 82" fill="none" stroke="#e0895a" stroke-width="3.2" stroke-linecap="round"/>
+  <!-- wordmark -->
+  <text x="128" y="66" font-family="Arial, 'Helvetica Neue', sans-serif" font-size="42" font-weight="700" letter-spacing="1" fill="#3f78c4">ZTO</text>
+  <text x="130" y="88" font-family="Arial, 'Helvetica Neue', sans-serif" font-size="15" font-weight="600" letter-spacing="6" fill="#9aa6b2">CABLE</text>
+</svg>

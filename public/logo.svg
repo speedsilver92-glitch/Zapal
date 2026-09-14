@@ -1,35 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 150" fill="none" role="img" aria-label="ZAPAL">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 150" fill="none" role="img" aria-label="ZAPAL">
   <defs>
-    <linearGradient id="zapalBolt" x1="30" y1="18" x2="150" y2="132" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#22b3e6"/>
-      <stop offset="0.42" stop-color="#2f6ff0"/>
-      <stop offset="0.72" stop-color="#f0693a"/>
-      <stop offset="1" stop-color="#f7b733"/>
+    <linearGradient id="zapalCyan" x1="80" y1="26" x2="128" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#48d5f3"/>
+      <stop offset="1" stop-color="#1fa4e3"/>
     </linearGradient>
-    <linearGradient id="zapalBoltBack" x1="40" y1="20" x2="120" y2="130" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#7ad0f0"/>
-      <stop offset="1" stop-color="#2f6ff0"/>
+    <linearGradient id="zapalBlue" x1="80" y1="30" x2="120" y2="86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2f77e8"/>
+      <stop offset="1" stop-color="#1c54cb"/>
     </linearGradient>
-    <linearGradient id="zapalWord" x1="180" y1="40" x2="180" y2="110" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#2f7bf0"/>
-      <stop offset="1" stop-color="#1e57c8"/>
+    <linearGradient id="zapalOrange" x1="150" y1="30" x2="98" y2="122" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f89a37"/>
+      <stop offset="0.5" stop-color="#f26e2c"/>
+      <stop offset="1" stop-color="#ef5236"/>
     </linearGradient>
+    <linearGradient id="zapalOrangeLight" x1="150" y1="34" x2="122" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffc652"/>
+      <stop offset="1" stop-color="#f88f2f"/>
+    </linearGradient>
+    <linearGradient id="zapalRed" x1="126" y1="80" x2="88" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f2593c"/>
+      <stop offset="1" stop-color="#e42a61"/>
+    </linearGradient>
+    <linearGradient id="zapalWord" x1="290" y1="42" x2="290" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#39c6ee"/>
+      <stop offset="0.55" stop-color="#2b7de6"/>
+      <stop offset="1" stop-color="#1e59cd"/>
+    </linearGradient>
+    <!-- clip to the exact bolt silhouette so every facet stays inside it -->
+    <clipPath id="boltClip">
+      <path d="M133 18 L86 74 L110 74 L96 132 L151 60 L123 60 L145 30 Z"/>
+    </clipPath>
   </defs>
-  <!-- circuit traces -->
-  <g stroke="#2f6ff0" stroke-width="3.4" stroke-linecap="round" fill="none">
-    <path d="M52 52 H30 M30 52 V70"/>
-    <path d="M46 74 H24"/>
-    <path d="M60 96 H34 M34 96 V80"/>
+
+  <!-- circuit traces with dots -->
+  <g stroke="#2f74e6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M64 56 H40 M40 56 V71"/>
+    <path d="M58 76 H30"/>
+    <path d="M68 96 H44 M44 96 V83"/>
   </g>
-  <g fill="#2f6ff0">
-    <circle cx="30" cy="52" r="4.6"/>
-    <circle cx="24" cy="74" r="4.6"/>
-    <circle cx="34" cy="96" r="4.6"/>
+  <g fill="#2f74e6">
+    <circle cx="40" cy="54" r="4.4"/>
+    <circle cx="30" cy="76" r="4.4"/>
+    <circle cx="44" cy="98" r="4.4"/>
   </g>
-  <!-- back layer of the bolt -->
-  <path d="M108 16 L60 74 L88 74 L66 132 L128 60 L100 60 Z" fill="url(#zapalBoltBack)" opacity="0.55"/>
-  <!-- main bolt -->
-  <path d="M120 14 L66 78 L96 78 L74 136 L142 62 L110 62 Z" fill="url(#zapalBolt)"/>
+
+  <!-- ===== faceted lightning bolt (all facets clipped to one silhouette) ===== -->
+  <g clip-path="url(#boltClip)">
+    <!-- base orange fill across whole bolt -->
+    <rect x="80" y="14" width="80" height="126" fill="url(#zapalOrange)"/>
+    <!-- deep-blue facet (lower plane of the upper-left arm) -->
+    <polygon points="133,18 82,82 118,82 133,52" fill="url(#zapalBlue)"/>
+    <!-- bright cyan facet (bright top plane of the arm) -->
+    <polygon points="133,18 90,68 112,68 133,42" fill="url(#zapalCyan)"/>
+    <!-- lighter orange highlight on the upper-right shoulder -->
+    <polygon points="151,30 120,64 151,56" fill="url(#zapalOrangeLight)"/>
+    <!-- red / magenta lower blade toward the pointed tip -->
+    <polygon points="116,88 96,132 134,82" fill="url(#zapalRed)"/>
+  </g>
+
   <!-- wordmark -->
-  <text x="166" y="102" font-family="Manrope, Arial, sans-serif" font-size="86" font-weight="800" letter-spacing="2" fill="url(#zapalWord)">ZAPAL</text>
+  <text x="176" y="103" font-family="Manrope, 'Segoe UI', Arial, sans-serif" font-size="82" font-weight="800" font-style="italic" letter-spacing="1" fill="url(#zapalWord)">ZAPAL</text>
 </svg>

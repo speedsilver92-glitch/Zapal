@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import Link from "next/link";
-import { MessageSquareText } from "lucide-react";
+import { cookies } from "next/headers";
 import { Header } from "@/components/header";
 import { SiteFooter } from "@/components/site-footer";
+import { LanguageProvider } from "@/components/language-provider";
+import { FloatingContact } from "@/components/floating-contact";
+import { defaultLocale, isLocale, LOCALE_COOKIE } from "@/lib/i18n";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,6 +16,20 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
-  return <html lang="en"><body><Header />{children}<SiteFooter /><Link href="/contacts#enquiry-form" className="floating-contact" aria-label="Send ZAPAL SK a message"><MessageSquareText size={23} strokeWidth={1.7} /><span>Let’s connect</span></Link></body></html>;
+export default async function RootLayout({ children }: { children: ReactNode }) {
+  const cookieStore = await cookies();
+  const cookieLocale = cookieStore.get(LOCALE_COOKIE)?.value;
+  const locale = isLocale(cookieLocale) ? cookieLocale : defaultLocale;
+  return (
+    <html lang={locale}>
+      <body>
+        <LanguageProvider initialLocale={locale}>
+          <Header />
+          {children}
+          <SiteFooter />
+          <FloatingContact />
+        </LanguageProvider>
+      </body>
+    </html>
+  );
 }
