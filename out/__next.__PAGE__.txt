@@ -1,0 +1,25 @@
+1:"$Sreact.fragment"
+2:I[65814,["/_next/static/chunks/30wwkza7_8k4k.js","/_next/static/chunks/0za-8cnu_w332.js","/_next/static/chunks/102in6zqw51_o.js","/_next/static/chunks/0xhrczkyikymk.js"],"HomeView"]
+3:I[97367,["/_next/static/chunks/30wwkza7_8k4k.js","/_next/static/chunks/0za-8cnu_w332.js","/_next/static/chunks/102in6zqw51_o.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[97367,["/_next/static/chunks/30wwkza7_8k4k.js","/_next/static/chunks/0za-8cnu_w332.js","/_next/static/chunks/102in6zqw51_o.js"],"ViewportBoundary"]
+9:I[97367,["/_next/static/chunks/30wwkza7_8k4k.js","/_next/static/chunks/0za-8cnu_w332.js","/_next/static/chunks/102in6zqw51_o.js"],"MetadataBoundary"]
+a:I[27201,["/_next/static/chunks/30wwkza7_8k4k.js","/_next/static/chunks/0za-8cnu_w332.js","/_next/static/chunks/102in6zqw51_o.js"],"IconMark"]
+c:I[36908,["/_next/static/chunks/30wwkza7_8k4k.js","/_next/static/chunks/0za-8cnu_w332.js","/_next/static/chunks/102in6zqw51_o.js"],"LanguageProvider"]
+d:I[93963,["/_next/static/chunks/30wwkza7_8k4k.js","/_next/static/chunks/0za-8cnu_w332.js","/_next/static/chunks/102in6zqw51_o.js"],"Header"]
+e:I[39756,["/_next/static/chunks/30wwkza7_8k4k.js","/_next/static/chunks/0za-8cnu_w332.js","/_next/static/chunks/102in6zqw51_o.js"],"default"]
+f:I[37457,["/_next/static/chunks/30wwkza7_8k4k.js","/_next/static/chunks/0za-8cnu_w332.js","/_next/static/chunks/102in6zqw51_o.js"],"default"]
+10:I[88442,["/_next/static/chunks/30wwkza7_8k4k.js","/_next/static/chunks/0za-8cnu_w332.js","/_next/static/chunks/102in6zqw51_o.js","/_next/static/chunks/03gxvp-vb716h.js"],"NotFoundView"]
+11:I[18090,["/_next/static/chunks/30wwkza7_8k4k.js","/_next/static/chunks/0za-8cnu_w332.js","/_next/static/chunks/102in6zqw51_o.js"],"SiteFooterView"]
+12:I[58648,["/_next/static/chunks/30wwkza7_8k4k.js","/_next/static/chunks/0za-8cnu_w332.js","/_next/static/chunks/102in6zqw51_o.js"],"FloatingContact"]
+:HL["/_next/static/chunks/28lbp4b45ufcu.css","style"]
+7:X
+0:{"buildId":"ULWqnhQAOcf9g1ZIwgxj9","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/_next/static/chunks/0xhrczkyikymk.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"ZAPAL SK — Connecting supply. Powering progress."}],["$","meta","1",{"name":"description","content":"Industrial materials, intelligent supply chain planning, and reliable logistics."}],["$","link","2",{"rel":"icon","href":"/icon.svg?icon.1uoep3y1rmr8-.svg","sizes":"any","type":"image/svg+xml"}],["$","$La","3",{}]]}]}]}],null]}],"isPartial":"$@b","staleTime":"$7","varyParams":null},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/28lbp4b45ufcu.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/30wwkza7_8k4k.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0za-8cnu_w332.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/102in6zqw51_o.js","async":true}]],["$","html",null,{"lang":"sk","children":["$","body",null,{"children":["$","$Lc",null,{"initialLocale":"sk","children":[["$","$Ld",null,{}],["$","$Le",null,{"parallelRouterKey":"children","template":["$","$Lf",null,{}],"notFound":[["$","$L10",null,{}],[]]}],["$","$L11",null,{"address":"Stará Vajnorská 1367/4, 831 04 Bratislava - mestská časť Nové Mesto, Slovakia","email":"info@zapal.sk","phone":"+421 90395489","directionsUrl":"https://www.google.com/maps/dir/?api=1&destination=Star%C3%A1%20Vajnorsk%C3%A1%201367%2F4%2C%20831%2004%20Bratislava%20-%20mestsk%C3%A1%20%C4%8Das%C5%A5%20Nov%C3%A9%20Mesto%2C%20Slovakia","registration":"53989775"}],["$","$L12",null,{}]]}]}]}]]}],"isPartial":"$@13","staleTime":"$7","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@14","rootVaryParams":null,"needsRuntimeRequest":"$@15"}
+5:null
+7:300
+15:true
+7:C
+14:0
+b:"$undefined"
+13:"$undefined"
+6:"$undefined"
