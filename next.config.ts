@@ -8,6 +8,13 @@ const nextConfig: NextConfig = {
     // and the images fail to render.
     qualities: [75, 80, 85, 90],
   },
+
+  outputFileTracingIncludes: {
+    "**/*": [
+      "./node_modules/pg-cloudflare/dist/**",
+      "./node_modules/pg-cloudflare/esm/**",
+    ],
+  },
 };
 
 export default nextConfig;
