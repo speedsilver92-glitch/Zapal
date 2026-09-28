@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 110" role="img" aria-label="ZTT">
+  <!-- diamond emblem with red dot -->
+  <g transform="translate(50 55)">
+    <rect x="-34" y="-34" width="68" height="68" rx="10" transform="rotate(45)" fill="none" stroke="#1f4ea1" stroke-width="7.5"/>
+    <rect x="-19" y="-19" width="38" height="38" rx="4" transform="rotate(45)" fill="none" stroke="#1f4ea1" stroke-width="3"/>
+    <circle cx="0" cy="0" r="13" fill="#d81f26"/>
+    <circle cx="-4" cy="-4" r="3.4" fill="#f2a3a6"/>
+  </g>
+  <!-- ZTT wordmark as bold vector paths -->
+  <g fill="#1f4ea1">
+    <!-- Z -->
+    <path d="M104 24 H164 V40 L128 82 H166 V96 H102 V80 L138 38 H104 Z"/>
+    <!-- T -->
+    <path d="M170 24 H232 V40 H210 V96 H192 V40 H170 Z"/>
+    <!-- T -->
+    <path d="M236 24 H298 V40 H276 V96 H258 V40 H236 Z"/>
+  </g>
+</svg>

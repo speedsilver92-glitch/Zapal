@@ -69,14 +69,14 @@ Browser checks are in `tests/site.spec.ts`. After the managed preview is running
 
 Images are licensed stock photography sourced from Pexels, used as illustrative backgrounds rather than representations of actual employees or assets:
 
-- Port: Kelly, photo 6595780
-- Aerial port: Ollie Craig, photo 7519262
-- Warehouse: Tiger Lily, photo 4487363
-- Electrical systems: ranjeet, photo 28265032
-- Cables: cnrdmroglu, photo 15559037
+- Port (hero): Griffin Wooldridge, photo 4940273
+- Aerial port: Diego F. Parra, photo 24244234
+- Warehouse: amerimet suppliers, photo 36696522
+- Electrical systems: Freek Wolsink, photo 34194580
+- Cables: Brett Sayles, photo 2420212
 - Logistics: Omar Gerardo, photo 34902065
-- Business collaboration: Yan Krukau, photo 7693692
-- Servers: panumas nikhomkhai, photo 17489160
-- Bratislava: Vish Pix, photo 21625704
+- Business collaboration: Andrea Piacquadio, photo 3860861
+- Servers: panumas nikhomkhai, photo 17323801
+- Bratislava: Helena Jankovičová Kováčová, photo 10137857
 
 Icons: Lucide. Font: Manrope (SIL Open Font License).

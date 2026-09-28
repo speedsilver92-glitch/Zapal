@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 150" fill="none" role="img" aria-label="ZAPAL">
+  <defs>
+    <linearGradient id="zapalCyanI" x1="80" y1="26" x2="128" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5cdcf6"/>
+      <stop offset="1" stop-color="#2bb2ec"/>
+    </linearGradient>
+    <linearGradient id="zapalBlueI" x1="80" y1="30" x2="120" y2="86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3f86f2"/>
+      <stop offset="1" stop-color="#2a63dc"/>
+    </linearGradient>
+    <linearGradient id="zapalOrangeI" x1="150" y1="30" x2="98" y2="122" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f89a37"/>
+      <stop offset="0.5" stop-color="#f26e2c"/>
+      <stop offset="1" stop-color="#ef5236"/>
+    </linearGradient>
+    <linearGradient id="zapalOrangeLightI" x1="150" y1="34" x2="122" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffc652"/>
+      <stop offset="1" stop-color="#f88f2f"/>
+    </linearGradient>
+    <linearGradient id="zapalRedI" x1="126" y1="80" x2="88" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f2593c"/>
+      <stop offset="1" stop-color="#e83566"/>
+    </linearGradient>
+    <clipPath id="boltClipI">
+      <path d="M133 18 L86 74 L110 74 L96 132 L151 60 L123 60 L145 30 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- circuit traces with dots (lighter for dark backgrounds) -->
+  <g stroke="#6fa8ff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M64 56 H40 M40 56 V71"/>
+    <path d="M58 76 H30"/>
+    <path d="M68 96 H44 M44 96 V83"/>
+  </g>
+  <g fill="#6fa8ff">
+    <circle cx="40" cy="54" r="4.4"/>
+    <circle cx="30" cy="76" r="4.4"/>
+    <circle cx="44" cy="98" r="4.4"/>
+  </g>
+
+  <g clip-path="url(#boltClipI)">
+    <rect x="80" y="14" width="80" height="126" fill="url(#zapalOrangeI)"/>
+    <polygon points="133,18 82,82 118,82 133,52" fill="url(#zapalBlueI)"/>
+    <polygon points="133,18 90,68 112,68 133,42" fill="url(#zapalCyanI)"/>
+    <polygon points="151,30 120,64 151,56" fill="url(#zapalOrangeLightI)"/>
+    <polygon points="116,88 96,132 134,82" fill="url(#zapalRedI)"/>
+  </g>
+
+  <!-- wordmark, white for dark backgrounds -->
+  <text x="176" y="103" font-family="Manrope, 'Segoe UI', Arial, sans-serif" font-size="82" font-weight="800" font-style="italic" letter-spacing="1" fill="#ffffff">ZAPAL</text>
+</svg>
