@@ -1,10 +1,7 @@
 @import "tailwindcss";
 
-@font-face{font-family:Manrope;src:url('/fonts/manrope-regular.ttf') format('truetype');font-style:normal;font-weight:400 500;font-display:swap}
-@font-face{font-family:Manrope;src:url('/fonts/manrope-semibold.ttf') format('truetype');font-style:normal;font-weight:600;font-display:swap}
-@font-face{font-family:Manrope;src:url('/fonts/manrope-bold.ttf') format('truetype');font-style:normal;font-weight:700 900;font-display:swap}
 
-:root{--blue:#185bd5;--blue-hover:#1049b4;--navy:#112c4c;--deep-navy:#0a2342;--ink:#152b46;--muted:#718095;--line:#e3e8ef;--soft:#f4f7fb;--sky:#a6caff;--font-sans:Manrope,Arial,sans-serif}
+:root{--blue:#185bd5;--blue-hover:#1049b4;--navy:#112c4c;--deep-navy:#0a2342;--ink:#152b46;--muted:#718095;--line:#e3e8ef;--soft:#f4f7fb;--sky:#a6caff;--font-sans:var(--font-manrope),Arial,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:128px}
 body{margin:0;background:#fff;color:var(--ink);font-family:var(--font-sans);font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}

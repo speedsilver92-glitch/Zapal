@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Manrope } from "next/font/google";
 import type { ReactNode } from "react";
 import { cookies } from "next/headers";
 import { Header } from "@/components/header";
@@ -7,6 +8,12 @@ import { LanguageProvider } from "@/components/language-provider";
 import { FloatingContact } from "@/components/floating-contact";
 import { defaultLocale, isLocale, LOCALE_COOKIE } from "@/lib/i18n";
 import "./globals.css";
+
+const manrope = Manrope({
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-manrope",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL || "https://www.zapal.sk"),
@@ -22,7 +29,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
   const locale = isLocale(cookieLocale) ? cookieLocale : defaultLocale;
   return (
     <html lang={locale}>
-      <body>
+      <body className={manrope.variable}>
         <LanguageProvider initialLocale={locale}>
           <Header />
           {children}
